@@ -12,6 +12,9 @@
 		522B1813205E642600574224 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522B1811205E642600574224 /* Main.storyboard */; };
 		522B1815205E642600574224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522B1814205E642600574224 /* Assets.xcassets */; };
 		522B1818205E642600574224 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522B1816205E642600574224 /* LaunchScreen.storyboard */; };
+		522B1820205E658B00574224 /* BlockChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B181F205E658B00574224 /* BlockChain.swift */; };
+		522B1822205E669D00574224 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B1821205E669D00574224 /* Block.swift */; };
+		522B1824205E66B900574224 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B1823205E66B900574224 /* Transaction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,10 @@
 		522B1814205E642600574224 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		522B1817205E642600574224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		522B1819205E642600574224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		522B181F205E658B00574224 /* BlockChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockChain.swift; sourceTree = "<group>"; };
+		522B1821205E669D00574224 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		522B1823205E66B900574224 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		522B1825205E6A1E00574224 /* Bridge-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,10 @@
 				522B1814205E642600574224 /* Assets.xcassets */,
 				522B1816205E642600574224 /* LaunchScreen.storyboard */,
 				522B1819205E642600574224 /* Info.plist */,
+				522B1821205E669D00574224 /* Block.swift */,
+				522B181F205E658B00574224 /* BlockChain.swift */,
+				522B1823205E66B900574224 /* Transaction.swift */,
+				522B1825205E6A1E00574224 /* Bridge-header.h */,
 			);
 			path = NanoBlockChain;
 			sourceTree = "<group>";
@@ -137,7 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				522B1810205E642600574224 /* ViewController.swift in Sources */,
+				522B1822205E669D00574224 /* Block.swift in Sources */,
 				522B180E205E642600574224 /* AppDelegate.swift in Sources */,
+				522B1820205E658B00574224 /* BlockChain.swift in Sources */,
+				522B1824205E66B900574224 /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +294,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.lemon.NanoBlockChain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/NanoBlockchain/Bridge-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -295,6 +310,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.lemon.NanoBlockChain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/NanoBlockchain/Bridge-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
